@@ -149,7 +149,9 @@ func (e *Escpos) WriteGBK(data string) (int, error) {
 	if err != nil {
 		return 0, err
 	}
-	defer cd.Close()
+	defer func(cd iconv.Iconv) {
+		_ = cd.Close()
+	}(cd)
 	gbk := cd.ConvString(data)
 	return e.Write(gbk)
 }
@@ -160,7 +162,9 @@ func (e *Escpos) WriteWEU(data string) (int, error) {
 	if err != nil {
 		return 0, err
 	}
-	defer cd.Close()
+	defer func(cd iconv.Iconv) {
+		_ = cd.Close()
+	}(cd)
 	weu := cd.ConvString(data)
 	return e.Write(weu)
 }

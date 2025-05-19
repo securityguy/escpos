@@ -2,6 +2,8 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhennedo%2Fescpos.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhennedo%2Fescpos?ref=badge_shield)
 [![Go Reference](https://pkg.go.dev/badge/github.com/hennedo/escpos.svg)](https://pkg.go.dev/github.com/hennedo/escpos)
 
+This fork was  created because the module has not been updated in 3 years and the only tag on the repo did not include all files. PRs are welcome.
+
 This is a [Golang](http://www.golang.org/project) package that provides
 [ESC-POS](https://en.wikipedia.org/wiki/ESC/P) library functions to help with
 sending control codes to a ESC-POS thermal printer.
@@ -90,6 +92,11 @@ This is a (not complete) list of supported and tested devices.
 | ------------ | -------- | --------- | -------- | -------- | ------ |
 | Epson        | TM-T20II | ✅        | ✅        | ✅       | ✅     |
 | Epson        | TM-T88II | ☑️<br/>UpsideDown Printing not supported  | ✅        |        | ✅     |
+
+## Acknowledgements
+This library was forked from https://github.com/hennedo/escpos
+
+It includes code from https://github.com/mugli/png2escpos
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fhennedo%2Fescpos.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fhennedo%2Fescpos?ref=badge_large)
