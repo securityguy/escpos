@@ -91,7 +91,7 @@ This is a (not complete) list of supported and tested devices.
 | Manufacturer | Model    | Styling   | Barcodes | QR Codes | Images |
 | ------------ | -------- | --------- | -------- | -------- | ------ |
 | Epson        | TM-T20II | ✅        | ✅        | ✅       | ✅     |
-| Epson        | TM-T88II | ☑️<br/>UpsideDown Printing not supported  | ✅        |        | ✅     |
+| Epson        | TM-T88II | ☑️UpsideDown Printing not supported  | ✅        |        | ✅     |
 
 ## Acknowledgements
 This library was forked from https://github.com/hennedo/escpos
